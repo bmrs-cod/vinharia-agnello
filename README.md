@@ -45,3 +45,15 @@ Funcionalidades:
 * Vídeo incorporado
 
 -----------------------------------------------------------
+
+
+Efeitos Visuais
+
+Neste projeto foram aplicados diversos efeitos visuais utilizando CSS avançado:
+
+* Uso de pseudo-classes como :hover, :focus, :active e :nth-child para melhorar a interatividade
+* Uso de pseudo-elementos como ::first-letter e ::after para estilização de textos
+* Aplicação de animação com @keyframes para entrada suave do conteúdo
+* Uso de transformações como scale() e rotate() em imagens e botões
+* Transições suaves em elementos interativos para melhor experiência do usuário
+

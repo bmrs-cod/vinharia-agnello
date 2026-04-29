@@ -20,3 +20,5 @@ img {
     height: auto;
     border-radius: 10px;
 }
+
+@import url("efeitos.css");

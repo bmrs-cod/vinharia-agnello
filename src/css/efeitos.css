@@ -1,0 +1,92 @@
+/* =========================
+   PSEUDO-CLASSES
+   ========================= */
+
+/* Efeito ao passar o mouse nos links */
+nav a:hover {
+    color: gold;
+    transition: 0.3s;
+}
+
+/* Efeito ao clicar no link */
+nav a:active {
+    transform: scale(0.95);
+}
+
+/* Destaque ao focar em campos de formulário */
+input:focus,
+textarea:focus {
+    border: 2px solid darkred;
+    outline: none;
+}
+
+/* Linhas alternadas da tabela */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* =========================
+   PSEUDO-ELEMENTOS
+   ========================= */
+
+/* Estiliza a primeira letra dos parágrafos */
+p::first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkred;
+}
+
+/* Adiciona um detalhe visual nos títulos */
+h2::after {
+    content: " ";
+}
+
+
+/* =========================
+   TRANSIÇÕES E TRANSFORMAÇÕES
+   ========================= */
+
+/* Transição padrão para imagens */
+img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao passar o mouse na imagem */
+img:hover {
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Botão com transição */
+button {
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+    transform: scale(1.1);
+    background-color: darkred;
+    color: white;
+}
+
+
+/* =========================
+   ANIMAÇÃO
+   ========================= */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica a animação no conteúdo principal */
+main {
+    animation: aparecer 1s ease-in-out;
+}
